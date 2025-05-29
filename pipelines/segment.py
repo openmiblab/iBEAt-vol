@@ -125,7 +125,7 @@ def kidneys_nnunet(database): #ADAPT TO THE nnUet for
 
     masks = nnUnet_Dixon_v1.apply(array_to_predict, weights)
 
-    shutil.rmtree(weights)
+    #shutil.rmtree(weights)
     shutil.rmtree(os.path.join(database.path(),'nnUNetTrainer__nnUNetPlans__3d_fullres'))
 
     rk, lk = nnUnet_Dixon_v1.kidney_masks(masks)
