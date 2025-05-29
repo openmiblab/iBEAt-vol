@@ -34,13 +34,13 @@ def single_subject(username, password, path, dataset):
     
     # HARMONIZATION
 
-    steps_core.rename_all_series(database)
-    steps_core.harmonize_subject_name(database)
+    # steps_core.rename_all_series(database)
+    # steps_core.harmonize_subject_name(database)
     
     # SEGMENTATION
-    steps_core.fetch_dl_models(database)
-    steps_internal.fetch_kidney_masks(database)
-    steps_core.segment_kidneys(database)
+    # steps_core.fetch_nnunet_models(database)
+    # steps_internal.fetch_kidney_masks(database)
+    # steps_core.segment_kidneys_nnunet(database)
     steps_internal.compute_whole_kidney_canvas(database)
     steps_core.export_segmentations(database) 
 

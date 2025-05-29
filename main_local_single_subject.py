@@ -14,9 +14,9 @@ if __name__ == '__main__':
 
     #SELECT ONE OPTION TO CHOOSE A DATASET
 
-    dataset = [6,1,7]    #entry in xnat
+    #dataset = [6,0,10]    #entry in xnat
     #dataset = '2128_007' #specific dataset
-    #dataset = 'load'      #load a previously downloaded dataset
+    dataset = 'load'      #load a previously downloaded dataset
 
     path = select_save_folder.internal()
     #XNAT Credentials

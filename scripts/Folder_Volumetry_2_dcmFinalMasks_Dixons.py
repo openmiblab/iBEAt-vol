@@ -31,14 +31,14 @@ def single_subject(username, password, path, dataset):
     database = db.database(path=pathScan)
     
 
-    #steps_internal.harmonize_subject_name(database,dataset)
+    steps_internal.harmonize_subject_name(database,dataset)
     
     filename_log = os.path.join(database.path(), database.PatientName +"_"+ datetime.datetime.now().strftime('%Y%m%d_%H%M_') + "LogFile.txt")
     database.set_log(filename_log)
     
     # HARMONIZATION
 
-    #steps_core.rename_all_series(database)
+    steps_core.rename_all_series(database)
 
     # # SEGMENTATION
     
